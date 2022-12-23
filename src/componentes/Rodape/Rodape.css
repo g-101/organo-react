@@ -2,22 +2,17 @@ footer {
   background: #6278f7;
 }
 .rodape {
-  background-image: url(../../imagens/fundo.png);
-
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #fff;
   padding: 80px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-
+.rodape ul {
+  display: flex;
+  gap: 32px;
+}
 .rodape ul li {
   display: inline-block;
-  margin-right: 32px;
-}
-
-.rodape ul li:last-child {
-  margin-right: 0;
 }
