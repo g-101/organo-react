@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
-import Rodape from './componentes/Rodape';
 import Time from './componentes/Time';
+import Rodape from './componentes/Rodape';
 
 const times = [
   {
     nome: 'Back-End',
-    corPrimaria: '#82CFFA',
-    corSecundaria: '#E8F8FF',
+    corPrimaria: '#E06B69',
+    corSecundaria: '#FDE7E8',
   },
   {
     nome: 'Front-End',
@@ -19,11 +19,6 @@ const times = [
     nome: 'Data Science',
     corPrimaria: '#A6D157',
     corSecundaria: '#F0F8E2',
-  },
-  {
-    nome: 'Devops',
-    corPrimaria: '#E06B69',
-    corSecundaria: '#FDE7E8',
   },
   {
     nome: 'UX e Design',
@@ -51,7 +46,9 @@ function App() {
     colaborador = { ...colaborador, id };
     setColaboradores([...colaboradores, colaborador]);
   };
-  console.log('colaboradores: ', colaboradores);
+  const deletarColaborador = () => {
+    console.log('deletando colaborador');
+  };
 
   return (
     <div className="App">
@@ -67,6 +64,7 @@ function App() {
           primaria={time.corPrimaria}
           secundaria={time.corSecundaria}
           colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+          aoDeletar={deletarColaborador}
         />
       ))}
       <Rodape />

@@ -4,6 +4,9 @@
 }
 
 .time h3 {
+  font-family: 'Prata', serif;
+  font-weight: 400;
+  line-height: 43px;
   font-size: 32px;
   border-bottom: 4px solid;
   display: inline-block;
