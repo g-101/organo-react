@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const timesData = [
   {
     nome: 'Back-End',
@@ -31,28 +33,35 @@ export const timesData = [
 
 export const colaboradoresInicial = [
   {
-    id: 'c0',
+    id: uuidv4(),
+    nome: 'LUIZ FERNANDO RIBEIRO',
+    cargo: 'Desenvolvedor de software e instrutor',
+    imagem: 'https://github.com/lfrprazeres.png',
+    time: timesData[4].nome,
+  },
+  {
+    id: uuidv4(),
     nome: 'JULIANA AMOASEI',
     cargo: 'Desenvolvedora de software e instrutora',
     imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
     time: timesData[0].nome,
   },
   {
-    id: 'c1',
+    id: uuidv4(),
     nome: 'DANIEL ARTINE',
     cargo: 'Engenheiro de Software na Stone Age',
     imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
     time: timesData[0].nome,
   },
   {
-    id: 'c2',
+    id: uuidv4(),
     nome: 'GUILHERME LIMA',
-    cargo: 'Desenvolvedor Python na Alura',
+    cargo: 'Desenvolvedor Python e Javascript na Alura',
     imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-    time: timesData[2].nome,
+    time: timesData[1].nome,
   },
   {
-    id: 'c3',
+    id: uuidv4(),
     nome: 'PAULO SILVEIRA',
     cargo: 'Hipster e CEO da Alura',
     imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
@@ -60,17 +69,67 @@ export const colaboradoresInicial = [
   },
 
   {
-    id: 'c4',
+    id: uuidv4(),
     nome: 'CAROL SANTOS',
     cargo: 'Tech lead',
     imagem: 'https://github.com/carolsvntos.png',
     time: timesData[1].nome,
   },
   {
-    id: 'c5',
+    id: uuidv4(),
     nome: 'GENESIS LIMA',
     cargo: 'Desenvolvedora Web',
     imagem: 'https://github.com/g-101.png',
     time: timesData[1].nome,
+  },
+  {
+    id: uuidv4(),
+    nome: 'LUIZ FERNANDO RIBEIRO',
+    cargo: 'Desenvolvedor de software e instrutor',
+    imagem: 'https://github.com/lfrprazeres.png',
+    time: timesData[5].nome,
+  },
+  {
+    id: uuidv4(),
+    nome: 'JULIANA AMOASEI',
+    cargo: 'Desenvolvedora de software e instrutora',
+    imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+    time: timesData[3].nome,
+  },
+  {
+    id: uuidv4(),
+    nome: 'DANIEL ARTINE',
+    cargo: 'Engenheiro de Software na Stone Age',
+    imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+    time: timesData[3].nome,
+  },
+  {
+    id: uuidv4(),
+    nome: 'GUILHERME LIMA',
+    cargo: 'Desenvolvedor Python e Javascript na Alura',
+    imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+    time: timesData[2].nome,
+  },
+  {
+    id: uuidv4(),
+    nome: 'PAULO SILVEIRA',
+    cargo: 'Hipster e CEO da Alura',
+    imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+    time: timesData[0].nome,
+  },
+
+  {
+    id: uuidv4(),
+    nome: 'CAROL SANTOS',
+    cargo: 'Tech lead',
+    imagem: 'https://github.com/carolsvntos.png',
+    time: timesData[4].nome,
+  },
+  {
+    id: uuidv4(),
+    nome: 'GENESIS LIMA',
+    cargo: 'Desenvolvedora Web',
+    imagem: 'https://github.com/g-101.png',
+    time: timesData[0].nome,
   },
 ];

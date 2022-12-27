@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 import { timesData, colaboradoresInicial } from './data';
 import Banner from './componentes/Banner';
@@ -10,9 +11,9 @@ function App() {
   const [colaboradores, setColaboradores] = useState(colaboradoresInicial);
   const [times, setTimes] = useState(timesData);
 
-  const aoNovoColaboradorAdicionado = colaborador => {
+  const cadastrarColaborador = colaborador => {
     // debugger;
-    const id = 'c' + colaboradores.length;
+    const id = uuidv4();
     colaborador = { ...colaborador, id };
     setColaboradores([...colaboradores, colaborador]);
   };
@@ -35,16 +36,17 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario
-        aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}
-        times={timesData.map(time => time.nome)}
+        // aoColaboradorCadastrado={colaborador => adicionarNovoColaborador(colaborador)}
+        aoCadastrarColaborador={cadastrarColaborador}
+        times={times.map(time => time.nome)}
       />
-      {timesData.map(time => (
+      {times.map(time => (
         <Time
           key={time.nome}
           time={time}
           colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
           aoDeletar={deletarColaborador}
-          mudarCor={mudarCorTime}
+          aoMudarCor={mudarCorTime}
         />
       ))}
       <Rodape />
