@@ -3,7 +3,7 @@ import hexToRgba from 'hex-to-rgba';
 import './Time.css';
 
 const Time = props => {
-  const { time, colaboradores, aoDeletar, aoMudarCor } = props;
+  const { time, colaboradores, aoDeletarColaborador, aoMudarCor } = props;
 
   const mudarCor = evento => aoMudarCor(evento.target.value, time.nome);
 
@@ -12,7 +12,7 @@ const Time = props => {
       <input type="color" className="input-cor" value={time.cor} onChange={mudarCor} />
       <h3 style={{ borderColor: time.cor }}>{time.nome}</h3>
       <div className="colaboradores">
-        {props.colaboradores.map(colaborador => {
+        {colaboradores.map(colaborador => {
           // console.log('renderizando colaborador');
 
           return (
@@ -20,7 +20,7 @@ const Time = props => {
               corFundo={time.cor}
               key={colaborador.id}
               colaborador={colaborador}
-              aoDeletar={aoDeletar}
+              aoDeletarColaborador={aoDeletarColaborador}
             />
           );
         })}

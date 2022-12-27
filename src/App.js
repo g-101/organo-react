@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 
 import { timesData, colaboradoresInicial } from './data';
 import Banner from './componentes/Banner';
@@ -13,12 +12,11 @@ function App() {
 
   const cadastrarColaborador = colaborador => {
     // debugger;
-    const id = uuidv4();
-    colaborador = { ...colaborador, id };
+
     setColaboradores([...colaboradores, colaborador]);
   };
-  const deletarColaborador = () => {
-    console.log('deletando colaborador');
+  const deletarColaborador = id => {
+    setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id));
   };
 
   const mudarCorTime = (cor, nome) => {
@@ -45,7 +43,7 @@ function App() {
           key={time.nome}
           time={time}
           colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-          aoDeletar={deletarColaborador}
+          aoDeletarColaborador={deletarColaborador}
           aoMudarCor={mudarCorTime}
         />
       ))}
