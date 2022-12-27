@@ -29,12 +29,14 @@ function App() {
       })
     );
   };
-
+  const cadastrarTime = novoTime => {
+    setTimes([...times, novoTime]);
+  };
   return (
     <div className="App">
       <Banner />
       <Formulario
-        // aoColaboradorCadastrado={colaborador => adicionarNovoColaborador(colaborador)}
+        aoCadastrarTime={cadastrarTime}
         aoCadastrarColaborador={cadastrarColaborador}
         times={times.map(time => time.nome)}
       />
