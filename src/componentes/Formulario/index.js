@@ -13,7 +13,7 @@ const Formulario = props => {
   const aoSalvar = evento => {
     evento.preventDefault();
 
-    props.aoColaboradorCadastrado({
+    props.aoCadastrarColaborador({
       nome: nome,
       cargo: cargo,
       imagem: imagem,
@@ -34,27 +34,27 @@ const Formulario = props => {
           label="Nome"
           placeholder="Digite o nome"
           valor={nome}
-          aoAlterado={valor => setNome(valor)}
+          aoAlterar={valor => setNome(valor)}
         />
         <CampoTexto
           obrigatorio={true}
           label="Cargo"
           placeholder="Digite o cargo"
           valor={cargo}
-          aoAlterado={valor => setCargo(valor)}
+          aoAlterar={valor => setCargo(valor)}
         />
         <CampoTexto
           label="Imagem"
           placeholder="Digite o endereço da imagem"
           valor={imagem}
-          aoAlterado={valor => setImagem(valor)}
+          aoAlterar={valor => setImagem(valor)}
         />
         <ListaSuspensa
           obrigatorio={true}
           label="Time"
           itens={props.times}
           valor={time}
-          aoAlterado={valor => setTime(valor)}
+          aoAlterar={valor => setTime(valor)}
         />
         <Botao>Criar Card</Botao>
       </form>

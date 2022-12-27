@@ -16,3 +16,11 @@ body {
 - Spacing system (px)
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+
+/* 
+ao passar um callback via props, nomei com "onAdd" na key da prop
+e o callback nomei na convenção normal de funções javascript
+
+Quando for passar o callback em um evento, coloque handler ou handle
+
+*/
