@@ -9,6 +9,24 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.times {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #6278f7;
+  border-bottom: 4px solid #6278f7;
+  display: inline-block;
+  padding-bottom: 24px;
+  margin: 32px 0;
+}
+
+h1,
+h2 {
+  font-family: 'Prata', serif;
+}
+
 /*
 - Font sizes (px)
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98

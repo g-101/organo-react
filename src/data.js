@@ -45,6 +45,7 @@ export const colaboradoresInicial = [
     cargo: 'Desenvolvedor de software e instrutor',
     imagem: 'https://github.com/lfrprazeres.png',
     time: timesData[4].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -52,6 +53,7 @@ export const colaboradoresInicial = [
     cargo: 'Desenvolvedora de software e instrutora',
     imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
     time: timesData[0].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -59,6 +61,7 @@ export const colaboradoresInicial = [
     cargo: 'Engenheiro de Software na Stone Age',
     imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
     time: timesData[0].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -66,6 +69,7 @@ export const colaboradoresInicial = [
     cargo: 'Desenvolvedor Python e Javascript na Alura',
     imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
     time: timesData[1].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -73,6 +77,7 @@ export const colaboradoresInicial = [
     cargo: 'Hipster e CEO da Alura',
     imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
     time: timesData[6].nome,
+    favorito: false,
   },
 
   {
@@ -81,6 +86,7 @@ export const colaboradoresInicial = [
     cargo: 'Tech lead',
     imagem: 'https://github.com/carolsvntos.png',
     time: timesData[1].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -88,6 +94,7 @@ export const colaboradoresInicial = [
     cargo: 'Desenvolvedora Web',
     imagem: 'https://github.com/g-101.png',
     time: timesData[1].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -95,6 +102,7 @@ export const colaboradoresInicial = [
     cargo: 'Desenvolvedor de software e instrutor',
     imagem: 'https://github.com/lfrprazeres.png',
     time: timesData[5].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -102,6 +110,7 @@ export const colaboradoresInicial = [
     cargo: 'Desenvolvedora de software e instrutora',
     imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
     time: timesData[3].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -109,6 +118,7 @@ export const colaboradoresInicial = [
     cargo: 'Engenheiro de Software na Stone Age',
     imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
     time: timesData[3].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -116,6 +126,7 @@ export const colaboradoresInicial = [
     cargo: 'Desenvolvedor Python e Javascript na Alura',
     imagem: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
     time: timesData[2].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -123,6 +134,7 @@ export const colaboradoresInicial = [
     cargo: 'Hipster e CEO da Alura',
     imagem: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
     time: timesData[0].nome,
+    favorito: false,
   },
 
   {
@@ -131,6 +143,7 @@ export const colaboradoresInicial = [
     cargo: 'Tech lead',
     imagem: 'https://github.com/carolsvntos.png',
     time: timesData[4].nome,
+    favorito: false,
   },
   {
     id: uuidv4(),
@@ -138,5 +151,6 @@ export const colaboradoresInicial = [
     cargo: 'Desenvolvedora Web',
     imagem: 'https://github.com/g-101.png',
     time: timesData[0].nome,
+    favorito: false,
   },
 ];

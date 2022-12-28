@@ -32,25 +32,41 @@ function App() {
   const cadastrarTime = novoTime => {
     setTimes([...times, novoTime]);
   };
+
+  const resolverFavorito = id => {
+    setColaboradores(
+      colaboradores.map(colaborador => {
+        if (colaborador.id === id) {
+          colaborador.favorito = !colaborador.favorito;
+        }
+        return colaborador;
+      })
+    );
+  };
+
   return (
-    <div className="App">
+    <>
       <Banner />
       <Formulario
         aoCadastrarTime={cadastrarTime}
         aoCadastrarColaborador={cadastrarColaborador}
         times={times.map(time => time.nome)}
       />
-      {times.map(time => (
-        <Time
-          key={time.nome}
-          time={time}
-          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-          aoDeletarColaborador={deletarColaborador}
-          aoMudarCor={mudarCorTime}
-        />
-      ))}
+      <section className="times">
+        <h1>Minha organização</h1>
+        {times.map(time => (
+          <Time
+            key={time.nome}
+            time={time}
+            colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+            aoDeletarColaborador={deletarColaborador}
+            aoMudarCor={mudarCorTime}
+            aoFavoritar={resolverFavorito}
+          />
+        ))}
+      </section>
       <Rodape />
-    </div>
+    </>
   );
 }
 

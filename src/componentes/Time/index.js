@@ -3,7 +3,7 @@ import hexToRgba from 'hex-to-rgba';
 import './Time.css';
 
 const Time = props => {
-  const { time, colaboradores, aoDeletarColaborador, aoMudarCor } = props;
+  const { time, colaboradores, aoDeletarColaborador, aoMudarCor, aoFavoritar } = props;
 
   const mudarCor = evento => aoMudarCor(evento.target.value, time.nome);
 
@@ -21,6 +21,7 @@ const Time = props => {
               key={colaborador.id}
               colaborador={colaborador}
               aoDeletarColaborador={aoDeletarColaborador}
+              aoFavoritar={aoFavoritar}
             />
           );
         })}
