@@ -3,5 +3,6 @@
 ## Sobre
 
 Projetos dos cursos:
-React: desenvolvendo com JavaScript
+
+<p>React: desenvolvendo com JavaScript</p>
 React: como os componentes funcionam
