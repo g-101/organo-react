@@ -2,4 +2,6 @@
 
 ## Sobre
 
-Projeto feito do curso React com Javascript - ALura
+Projetos dos cursos:
+React: desenvolvendo com JavaScript
+React: como os componentes funcionam
